@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>title of this page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+   
+</head>
+<body>
+    <section id="landing">
+        <nav>
+            <div class="nav__container">
+                <img class="logo" src="./assets/logo.png" alt="">
+                <ul class="nav__links">
+                    <li><a href="#" class="nav__link">Home</a></li>
+                    <li><a href="#" class="nav__link">Contact</a></li>
+                    <li><a href="books.html" class="nav__link primary">Books</a></li>
+                </ul>
+            
+                <!-- hamburger start here-->
+                <button class="btn__menu" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="menu__backdrop">
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="menu_links">
+                        <li class="menu__list">
+                            <a href="index.html" class="menu__link" onclick="closeMenu()">Home</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="books.html" class="menu__link" onclick="closeMenu()">Books</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+         </div>
+            <!-- hamburger end here-->
+        </nav>
+        <header>
+            <div class="header__container">
+                <div class="header__description">
+                    <h1>Banglore most crowded online library plateform</h1>
+                    <h2>Find your Dream book with <span class="purple">Library</span> </h2>
+                    <a href="#recent">
+                        <button class="btn">Browse Books</button>
+                    </a>
+                    
+                </div>
+                <figure class="header__img--wrapper">
+                    <img src="./assets/hero.png" alt="">
+                </figure>
+            </div>
+        </header>
+    </section>
+
+    <main>
+        <section id="highlight">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section__title">
+                        Why choose <span class="purple">Library</span>
+                    </h2>
+                    <div class="hightlight__wrapper">
+
+                        <div class="hightlight">
+                            <div class="hightlight__img">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3 class="highlight_subtitle">easy and quick</h3>
+                            <p class="highlight__para">Get access to your purchase fast!</p>
+                        </div>
+
+                        <div class="hightlight">
+                            <div class="hightlight__img">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <h3 class="highlight_subtitle">10,000+Books</h3>
+                            <p class="highlight__para">Almost all stream book available!</p>
+                        </div>
+
+                        <div class="hightlight">
+                            <div class="hightlight__img">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                            <h3 class="highlight_subtitle">Affordable</h3>
+                            <p class="highlight__para">As Affordable as you can't think!</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- features section start here -->
+        <section id="features">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section__title">
+                        Featured <span class="purple">Books</span>
+                    </h2>
+                    <div class="books">
+                        <!-- 1 -->
+                        <div class="book">
+                            <figure class="book__image--wrapper">
+                                <img class="book__img" src="./assets/book.jpg" alt="" >
+                            </figure>
+                            <div class="book__title">
+                                You can win
+                            </div>
+                            <div class="book__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--normal">$59.45</span>$14.99
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="book">
+                            <figure class="book__image--wrapper">
+                                <img class="book__img" src="./assets/googleguys.jpg" alt="" >
+                            </figure>
+                            <div class="book__title">
+                                the goolge guys
+                            </div>
+                            <div class="book__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--normal">$59.45</span>$14.99
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="book">
+                            <figure class="book__image--wrapper">
+                                <img class="book__img" src="./assets/thinklikezuck.jpg" alt="" >
+                            </figure>
+                            <div class="book__title">
+                               think like zuck
+                            </div>
+                            <div class="book__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--normal">$59.45</span>$14.99
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="book">
+                            <figure class="book__image--wrapper">
+                                <img class="book__img" src="./assets/elonmusk.jpg" alt="" >
+                            </figure>
+                            <div class="book__title">
+                               the rule for success
+                            </div>
+                            <div class="book__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--normal">$59.45</span>$14.99
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent start here -->
+        <section id="recent">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section__title">
+                        Latest <span class="purple">Books</span>
+                    </h2>
+                    <div class="books">
+                        <!-- 1 -->
+                        <div class="book">
+                            <figure class="book__image--wrapper">
+                                <img class="book__img" src="./assets/1.jpg" alt="" >
+                            </figure>
+                            <div class="book__title">
+                                Steve jobs
+                            </div>
+                            <div class="book__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--normal">$59.45</span>$14.99
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="book">
+                            <figure class="book__image--wrapper">
+                                <img class="book__img" src="./assets/2.jpg" alt="" >
+                            </figure>
+                            <div class="book__title">
+                               Stya nadela
+                            </div>
+                            <div class="book__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--normal">$59.45</span>$14.99
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="book">
+                            <figure class="book__image--wrapper">
+                                <img class="book__img" src="./assets/3.jpg" alt="" >
+                            </figure>
+                            <div class="book__title">
+                               Bill gates
+                            </div>
+                            <div class="book__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--normal">$59.45</span>$14.99
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="book">
+                            <figure class="book__image--wrapper">
+                                <img class="book__img" src="./assets/4.jpg" alt="" >
+                            </figure>
+                            <div class="book__title">
+                               stephen hawking
+                            </div>
+                            <div class="book__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--normal">$59.45</span>$14.99
+                            </div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="book">
+                            <figure class="book__image--wrapper">
+                                <img class="book__img" src="./assets/5.jpg" alt="" >
+                            </figure>
+                            <div class="book__title">
+                               nikola tesla
+                            </div>
+                            <div class="book__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--normal">$59.45</span>$14.99
+                            </div>
+                        </div>
+                        <!-- 6 -->
+                        <div class="book">
+                            <figure class="book__image--wrapper">
+                                <img class="book__img" src="./assets/6.jpg" alt="" >
+                            </figure>
+                            <div class="book__title">
+                               the wings of fire
+                            </div>
+                            <div class="book__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--normal">$59.45</span>$14.99
+                            </div>
+                        </div>
+                        <!-- 7 -->
+                        <div class="book">
+                            <figure class="book__image--wrapper">
+                                <img class="book__img" src="./assets/7.jpg" alt="" >
+                            </figure>
+                            <div class="book__title">
+                               mahatma gandhi
+                            </div>
+                            <div class="book__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--normal">$59.45</span>$14.99
+                            </div>
+                        </div>
+                        <!-- 8 -->
+                        <div class="book">
+                            <figure class="book__image--wrapper">
+                                <img class="book__img" src="./assets/8.jpg" alt="" >
+                            </figure>
+                            <div class="book__title">
+                               narendra modi
+                            </div>
+                            <div class="book__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--normal">$59.45</span>$14.99
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- explore start here -->
+        <section id="explore">
+            <div class="container">
+                <div class="row  row-colon">
+                    <h2>Explore more <span class="purple">Books</span> </h2>
+                    <a href="#features">
+                        <button class="btn">Browse Books</button>
+                    </a>
+                    
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row row-colon">
+                <a href="">
+                    <figure class="footer__logo">
+                        <img src="./assets/book.png" alt="" class="footer__logo--img">
+                    </figure>
+                </a>
+                <div class="footer__list">
+                    <a href="#" class="foolter__link">Home</a>
+                    <a href="#" class="foolter__link">About</a>
+                    <a href="books.html" class="foolter__link">Books</a>
+                    <a href="#" class="foolter__link">Contact</a>
+                </div>
+                <div class="footer__copyright">
+                    Copyright &copy; 2023 Subh Library Banglore <br>
+                    <p>Design and Develop by :
+                        <span class="purple" id="developer" title="developer" onclick="showDeveloperName()">Rajeev kumar</span> 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- developer details -->
+        <div id="developer__details">
+            <i id="close" class="fa-solid fa-circle-xmark" title="close" onclick="hideDeveloperName()"></i>
+            <div class="developer__img">
+                <figure id="developer__img--wrapper">
+                    <img src="./assets/developerimg.png" alt="developer-img">
+                </figure>
+            </div>
+            <div class="details developer__name">
+                Rajeev Kumar
+            </div>
+            <div class="details developer__email">
+                rajrausani@mail.com
+            </div>
+        </div>
+    </footer>
+    <!-- hamburger js  link-->
+    <script src="index.js"></script>
+    <script src="showdeveloper.js"></script>
+</body>
+</html>
